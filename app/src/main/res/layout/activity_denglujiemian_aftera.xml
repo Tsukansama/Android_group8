@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="414dp"
+    android:layout_height="605dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="10dp"
+    android:paddingRight="5dp"
+    tools:context=".jxl.denglujiemian_aftera">
+
+    <ImageView
+        android:id="@+id/imageView_saoyisao"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@mipmap/saoyisao" />
+
+    <EditText
+        android:id="@+id/edittext_shouyesousuo"
+        android:layout_width="340dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/imageView_saoyisao"
+        android:background="@drawable/editsharp"
+        android:paddingLeft="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/edittext_shouyesousuo"
+        app:srcCompat="@mipmap/sousuo" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/looper_pager"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/edittext_shouyesousuo"
+        tools:ignore="MissingConstraints"></androidx.viewpager.widget.ViewPager>
+
+    <ImageView
+        android:id="@+id/shouye_page1"
+        android:layout_width="406dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/looper_pager"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_useBlue" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/shouye_page1" />
+
+    <ImageView
+        android:id="@+id/shouye_xian_3"
+        android:layout_width="406dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/recycler_view"
+        android:background="@color/color_useBlue" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/color_grey">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/shouye_blue"></Button>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="52dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/jijian_black"></Button>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/yonghu_black"></Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>
