@@ -1,4 +1,4 @@
-package com.henu.myapplication.jxl.Adapters;
+package com.henu.myapplication.ui.Adapters;
 
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.henu.myapplication.R;
-import com.henu.myapplication.jxl.beans.ItemBean;
+import com.henu.myapplication.beans.ItemBean;
 
 import java.util.List;
 

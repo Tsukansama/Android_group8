@@ -1,4 +1,4 @@
-package com.henu.myapplication.jxl.beans;
+package com.henu.myapplication.beans;
 
 import com.henu.myapplication.R;
 

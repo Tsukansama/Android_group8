@@ -9,20 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".jxl.denglujiemian_aftera">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".ui.activity.denglujiemian_after">
         </activity>
-        <activity android:name=".jxl.zhuce"></activity>
-        <activity android:name=".jxl.sousuojieguo" />
-        <activity android:name=".jxl.denglujiemian_after" />
-        <activity android:name=".jxl.denglujiemian">
+        <activity android:name=".ui.activity.zhuce"></activity>
+        <activity android:name=".ui.activity.sousuojieguo" />
+        <activity android:name=".ui.activity.denglujiemian">
 
         </activity>
-        <activity android:name=".jxl.MainActivity"></activity>
+        <activity android:name=".ui.activity.MainActivity">           <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
     </application>
 
 </manifest>

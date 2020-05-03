@@ -1,4 +1,4 @@
-package com.henu.myapplication.jxl;
+package com.henu.myapplication.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,15 +7,16 @@ import androidx.viewpager.widget.ViewPager;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
+import com.henu.myapplication.ui.Adapters.ListViewAdapter;
+import com.henu.myapplication.ui.Adapters.LooperPagerAdapter;
 import com.henu.myapplication.R;
-import com.henu.myapplication.jxl.Adapters.ListViewAdapter;
-import com.henu.myapplication.jxl.beans.Datas;
-import com.henu.myapplication.jxl.beans.ItemBean;
+import com.henu.myapplication.beans.Datas;
+import com.henu.myapplication.beans.ItemBean;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class denglujiemian_aftera extends AppCompatActivity {
+public class denglujiemian_after extends AppCompatActivity {
     private List<ItemBean> mData;
     private RecyclerView mlist;
     private LooperPagerAdapter mLooperPagerAdapter;
@@ -30,7 +31,7 @@ public class denglujiemian_aftera extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_denglujiemian_aftera);
+        setContentView(R.layout.activity_denglujiemian_after);
         mlist = (RecyclerView) this.findViewById(R.id.recycler_view);
         initView();
         initData();
